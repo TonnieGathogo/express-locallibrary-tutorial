@@ -16,6 +16,7 @@ var mongoose = require('mongoose');
 var dev_db_url = 'mongodb+srv://dbAdmin:Jayjoe%402016@cluster0.7b7ye.mongodb.net/local_library?retryWrites=true&w=majority'
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.Promise = global.Promise;
 
 
 var db = mongoose.connection;
