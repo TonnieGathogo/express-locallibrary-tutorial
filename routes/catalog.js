@@ -3,7 +3,7 @@ var router = express.Router();
 
 // Require controller modules.
 var author_controller = require('../controllers/authorController');
-var book_controller = require('../controllerjjs/bookController');
+var book_controller = require('./controllers/bookController');
 var genre_controller = require('../controllers/genreController');
 var book_instance_controller = require('../controllers/bookinstanceController');
 
